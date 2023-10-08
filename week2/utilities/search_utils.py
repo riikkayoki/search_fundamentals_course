@@ -346,7 +346,6 @@ def lookup_query(query, all_clicks_df, opensearch, explain=False, index="bbuy_pr
                         print("Explain query %s" % query_obj)
                         response = opensearch.explain(index, sku, body=query_obj)
                         print(json.dumps(response, indent=4))
-                    
-                
+
         else:
             print("No clicks for query %s" % query)
